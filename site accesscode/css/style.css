@@ -1,36 +1,255 @@
-body
-{
-    width: 100%;
+/* définition des polices */
+@font-face{
+    font-family: "OpenSans";
+    src:url("../Open_sans_font/OpenSans-Regular.ttf");
+    font-family: "OpenSansLight";
+    src:url("../Open_sans_font/OpenSans-Light.ttf");
 }
 
-header
-{
-    /* background: url("images/header.png"); */
-    /* background-attachment: fixed; */
-    color: white;
-    
-
-
+body{
+     
+     font-family: "OpenSans";
 }
-nav
-{
-    display:inline-flex;
-    justify-content:space-around ;
-    background-color: rgb(0,0,0,0.3);
-    width: 100%;
+/* -----------------------entête--------------------------- */
+header{
+    background-image: url("../images/header.png");
     position: absolute;
     top: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 360px;
-    padding-right: 360px;
-}
-nav ul
-{
+    width: 1920px;
+    height: 896px;
+    color: white;
+    text-align: center;
     display: flex;
-
+    flex-direction: column;
 }
-nav ul :hover
-{
+/* ---------------barre de navigation en haut----------- */
+nav{
+    display:flex;
+    justify-content:space-between ;
+    /* fond noir en transparence */
+    background-color: rgb(0,0,0,0.3);
+    width: 1920px;
+    /* position en haut */
+    position: absolute;
+    top: 0;
+    padding: 20px 0;
+}
+.logoACS{
+    padding-left: 160px;
+}
+nav ul{
+    display: flex;
+    padding-right: 160px;
+}
+nav li, nav a, header a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
+nav ul :hover{
     color: #d31f44;
 }
+/* --------------------texte du header */
+h1{
+    margin-top: 330px;
+    font-size: 3em;
+    font-family: "OpenSans";
+    /* border: 2px blue solid; */
+}
+h2{
+    background-color: rgb(150,150,150,0.3);
+    padding: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+   
+    color: gray;
+    font-size: 2em;
+    font-family: "OpenSansLight";
+}
+/* ------------------bouton rouge du header */
+.bouton_rouge1{
+    background-image: url("../images/fondBoutonRougeDegrade.png");
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    margin-top: 40px;
+}
+
+/* ------------bandeau GEN--------------------------- */
+#GEN{
+    height: 360px;
+    width: 1920px;
+    margin-top: 896px;
+    padding: 30px 0;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#GEN{
+    text-align: center;
+    margin-bottom: 0;
+}
+#gen2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 160px;
+}
+#texteGauche{
+    text-align: right;
+    padding-right: 20px;
+    width: 510px;
+}
+#texteDroite{
+    text-align: left;
+    padding-left: 20px;
+    width: 510px;
+}
+/* puces des listes en elipses rouges */
+#texteDroite li, #texteProjet li{
+    list-style-type: circle;  /* au cas où pb avec image */
+    list-style-image: url("../images/elipse.png");
+}
+
+/* --------------------bandeau enseignement-------------------- */
+#enseignement{
+    background-image: url("../images/projet_collaboratif_bg.png");
+    background-repeat: no-repeat;
+    height: 380px;
+    width: 1920px;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#enseign{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px 160px;
+}
+#enseign p{
+    text-align: center;
+}
+
+/* ----------------------bandeau métier------------------- */
+#metier{
+    background-color: #3e3e3e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 1920px;
+    height: 440px;
+    padding-top: 50px;
+border: 2px red solid;
+}
+/* mise en forme pour tous les titres souligné */
+.titre, .titre h3{
+    text-align: left;
+}
+#texteMetier{
+    text-align: left;
+    padding-right: 40px;
+}
+#texteMetier h4{
+    margin-bottom: 0;
+}
+#texteMetier h4 + p{
+    margin-top: 0;
+}
+#texteMetier a{
+    background-image: url("../images/fondBoutonRougeDegrade.png");
+    background-repeat: no-repeat;
+    padding: 10px 30px;
+    margin-top: 40px;  
+    text-decoration: none;
+    color: white;
+}
+#video{
+    padding-top: 30px;
+}
+
+/* -------------------------bandeau projet------------------------ */
+#projet{
+    display: flex;
+    justify-content: center;
+    padding: 50px 160px;
+
+}
+
+#texteProjet{
+    padding-left: 40px;
+
+}
+
+/* --------------------------bandeau titre pro---------------------- */
+#titrePro{
+    background-image: url(../images/projet_bg.png);
+    width: 1920px;
+    height: 250px;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 50px;
+}
+
+/* ----------------------------bandeau centres------------------ */
+#centres{
+    width: 1920px; 
+}
+#centres h3, #centres .ligne{
+    padding: 10px 360px;
+    margin-bottom: 0;
+}
+#photosCentres{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 360px;
+}
+#photosCentres img{
+    padding-bottom: 25px;
+}
+
+/* -----------------------------bandeau témoignages------------- */
+#temoignages{
+    background-image: url(../images/temoignages.png);
+    width: 1920px;
+    height: 600px;
+    color:white;
+    padding: 30px 160px;
+border: 2px blue solid;
+}
+
+
+#temoignages :nth-child(2){
+    text-align: right;
+border: 2px green solid;
+}
+#temoignages a{
+    background-image: url("../images/fondBoutonRougeDegrade.png");
+    background-repeat: no-repeat;
+    padding: 10px 30px;
+    margin-top: 40px;  
+    text-decoration: none;
+    color: white;
+}
+
+/* -----------------------bandeau contact--------------------------- */
+#contact{
+    background-color: #d31f44;
+    width: 1920px;
+    color: white;
+    padding: 40px;
+
+/* border: 2px rgb(0, 247, 255) solid; */
+}
+#contact h3{
+    text-align: left;
+    text-transform: uppercase;s
+}
+
