@@ -1,6 +1,6 @@
 /* définition des polices */
 @font-face{
-    font-family: "OpenSans";
+    font-family: "Open Sans";
     src:url("../Open_sans_font/OpenSans-Regular.ttf");
     font-family: "OpenSansLight";
     src:url("../Open_sans_font/OpenSans-Light.ttf");
@@ -8,7 +8,7 @@
 
 body{
      
-     font-family: "OpenSans";
+     font-family: "Open Sans";
 }
 /* -----------------------entête--------------------------- */
 header{
@@ -22,7 +22,7 @@ header{
     display: flex;
     flex-direction: column;
 }
-/* ---------------barre de navigation en haut----------- */
+/* ---------------barre de navigation en haut- */
 nav{
     display:flex;
     justify-content:space-between ;
@@ -55,7 +55,6 @@ h1{
     margin-top: 330px;
     font-size: 3em;
     font-family: "OpenSans";
-    /* border: 2px blue solid; */
 }
 h2{
     background-color: rgb(150,150,150,0.3);
@@ -139,13 +138,13 @@ h3{
 /* ----------------------bandeau métier------------------- */
 #metier{
     background-color: #3e3e3e;
-    color: white;
+    color:white;
     display: flex;
     justify-content: center;
     width: 1920px;
     height: 440px;
     padding-top: 50px;
-border: 2px red solid;
+
 }
 /* mise en forme pour tous les titres souligné */
 .titre, .titre h3{
@@ -162,12 +161,15 @@ border: 2px red solid;
     margin-top: 0;
 }
 #texteMetier a{
-    background-image: url("../images/fondBoutonRougeDegrade.png");
-    background-repeat: no-repeat;
     padding: 10px 30px;
     margin-top: 40px;  
     text-decoration: none;
-    color: white;
+    color:white;
+    border: 3px white solid;
+}
+#texteMetier a:hover{
+    background-image: linear-gradient(to left, #9d0021, #d31e44);
+    border: none ;
 }
 #video{
     padding-top: 30px;
@@ -209,47 +211,177 @@ border: 2px red solid;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px 360px;
+    margin: 10px 360px;
 }
 #photosCentres img{
     padding-bottom: 25px;
+}
+#photosCentres img:hover{
+    color: #d31e44;opacity:0.5;
 }
 
 /* -----------------------------bandeau témoignages------------- */
 #temoignages{
     background-image: url(../images/temoignages.png);
-    width: 1920px;
+    width: 1200px;
     height: 600px;
     color:white;
-    padding: 30px 160px;
-border: 2px blue solid;
+    padding: 30px 360px;
+}
+#entete{
+    display: flex;
+    justify-content: space-between;
 }
 
-
-#temoignages :nth-child(2){
-    text-align: right;
-border: 2px green solid;
+#temoignTexte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-#temoignages a{
-    background-image: url("../images/fondBoutonRougeDegrade.png");
-    background-repeat: no-repeat;
-    padding: 10px 30px;
-    margin-top: 40px;  
-    text-decoration: none;
+#temoignTexte p{
+    font-family: "OpenSansLignt";
+    line-height: 30px;
+    padding-top: 30px;
+    font-size: 1.4em;
+    color: grey;
+    text-align: justify;
+}
+#identite{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+#identite strong{
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+    padding: 0 15px;
     color: white;
+}
+/* bouton */
+#temoignages a{
+    text-decoration: none;
+    color: grey;
+    border: 3px white solid;
+    padding: 15px 20px;  
+    margin-top: 50px; 
+    width: 200px;
+    text-align: center;
+    font-size: 1.2em;
+}
+#temoignages a:hover{
+    background-image: linear-gradient(to left, #9d0021, #d31e44);
+    border: none ;
 }
 
 /* -----------------------bandeau contact--------------------------- */
 #contact{
-    background-color: #d31f44;
-    width: 1920px;
+    background-image: linear-gradient(#9d0021, #d31e44);
     color: white;
-    padding: 40px;
-
-/* border: 2px rgb(0, 247, 255) solid; */
+    height: 785px;
+    padding: 40px 360px;
+    width: 1200px;
 }
+  /* texte en majuscule */
 #contact h3{
     text-align: left;
-    text-transform: uppercase;s
+    text-transform: uppercase;
+}
+::placeholder{
+    text-transform: uppercase;
+    color:white;
+}
+/* mise en page des flex-box */
+#formulaire{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+#debut{
+    display: flex;
+    justify-content: center;
+}
+#nomcomplet, #codeville{
+    display: flex;
+    justify-content: space-between;
+}
+/* border: 2px blue solid; */
+/* border: 2px red solid; */
+#formGauche{
+    width: 50%;
+}
+/* mise en place du paragraphe de texte */
+#texteformulaire{
+    padding-left: 50px;
+    padding-top: 20px;
+    width: 50%;
+}
+/* retrait des cases de saisies par défaut  */
+input, textarea{
+    background-color: transparent;
+    border: none;
+}
+/* lignes sous zones de saisie du formulaire */
+#nom1, #nom2, #mail, #code, #nomville {
+    border-bottom: 2px white solid;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
 }
 
+#nom1, #nom2, #code, #nomville {
+    width: 250px;
+}
+
+/* definition de la zone de message */
+textarea{
+    border: 2px white solid;
+    margin-top: 10px;
+    height: 200px;
+    width: 100%;
+    resize: none;
+}
+/* bouton d'envoi */
+input[type=submit]{
+    background-color: white;
+    color: #d31f44;
+    margin-left: 500px;
+    margin-top: 50px;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+/* ------------------------bandeau logo----------------------- */
+#logos{
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    padding: 50px 50px;
+    width: 1820px;
+}
+#logos img:nth-child(1){
+    padding: 40px 0px;
+}
+#logos img:nth-child(3), #logos img:nth-child(4){
+    padding: 20px 0px;
+}
+/* ----------------bandeau footer--------------- */
+footer{
+    background-color: #3e3e3e;
+    height: 55px;
+    padding: 70px 360px;
+    width: 1200px;
+}
+#miseEnForme{
+    display: flex;
+    justify-content: space-between;
+}
+footer a{
+    color:white;
+    text-decoration: none;
+}
+footer a:first-child{
+    border-right: 1px white solid;
+    padding-right: 5px;
+}
+#icones img{
+    padding-left: 10px;
+}

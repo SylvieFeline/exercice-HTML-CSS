@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
     <title>site access code</title>
 </head>
-<!-- ----------------------------- -->
+
 <body>
+<!-- -----------------------entête------------------------ -->
     <header>
+    <!-- ------------barre de navigation   -->
         <nav>
             <img src="images/logo_ACS2.png" alt="logo ACS" class="logoACS"/>
             <ul>
@@ -20,12 +22,13 @@
                 <li><a href="#">INSCRIPTION</a></li>
             </ul>
         </nav>
+    <!-- -------------texte du header--- -->    
         <h1>Devenez développeur web en 8 mois</h1>
         <h2>Une formation qualifiante accessible sans condition de diplôme.</h2>
         <!-- lien dans un paragraphe pour le définir en bloc -->
         <p><a href="#" class="bouton_rouge1">En savoir plus</a></p>
     </header>
-    <!-- ----------------------------- -->
+    <!-- -------------------bandeau GEN----------------------------- -->
     <div id="GEN">
         <h3>Formation labellisée grande école du numérique</h3>
         <img src="images/ligneRouge_titre.png" alt="ligne" />
@@ -50,7 +53,7 @@
             </div>
         </div>
     </div>
-    <!-- ----------------------------- -->
+    <!-- ---------------bandeau enseignement----------------- -->
     <div id="enseignement">
         <!-- <img src="images/projet_collaboratif_bg.png" alt="fond bandeau enseignement"/> -->
         <h3>UN ENSEIGNEMENT ADAPTE A LA VIE PROFESSIONNELLE</h3>
@@ -87,7 +90,7 @@
                 curiosité et aux bons outils</p>
             </div>
         </div>    
-        <!-- ------------------------- -->
+        <!-- ----------------bandeau métier------------------------- -->
     </div>
     <div id="metier">
         <div id="texteMetier">
@@ -108,10 +111,10 @@
             <a href="#" class="bouton_rouge2">JE M'INSCRIS</a>   
         </div>
         <div id="video">
-            <img src="images/acs_video.png" alt="video"/>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d5-0OVmNzs8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
     </div>
-    <!-- ------------------------ -->
+    <!-- -----------------bandeau projet------------------------ -->
     <div id="projet">
         <img src="images/projet_img.png" alt="photo étudiant"/>
         <div id="texteProjet">
@@ -130,13 +133,14 @@
                 <li>d'un réseau d'entreprises et de professionnels du numérique</li>
             </ul>
         </div>
+         <!-- ------------------bandeau titre pro------------------------- -->
     </div>
     <div id="titrePro">
         <p>Nos formations Acess Code School permettent d'obtenir un <br/>
         <strong>Titre professionnel de Niveau III</strong> de Développeur logiciel<br/>
         ou de Designers Web.</p>
     </div>
-    <!-- ----------------------------- -->
+    <!-- ---------------------bandeau centres---------------------------- -->
     <div id="centres">
         <div class="titre">
             <h3>NOS CENTRES DE FORMATION</h3>
@@ -148,66 +152,109 @@
             <img src="images/centre_vesoul.png" alt="vesoul"/>
             <img src="images/centre_chalon.png" alt="chalon"/>
             <img src="images/centre_belfort.png" alt="belforf"/>
-            <img src ="images/centre_lons.png" alt="lons"/>
+            <img src="images/centre_lons.png" alt="lons"/>
             <img src="images/centre_nevers.png" alt="nevers"/>
             <img src="images/centre_dakar.png" alt="dakar"/>
         </div>
     </div>
-    <!-- ---------------------------- -->
+    <!-- ----------------------bandeau témoignages----------- -->
     <div id="temoignages">
-        <div class="titre">
-            <h3>Témoignages</h3>
-            <img src="images/ligneBlanche_titre.png" alt="ligne"/>
-        </div>    
-        <img src="images/quote.png" alt=" quote"/>
-        <p>J'ai intégré l'ACS pour une reconversion professionnelle, sans autre expérience que celle de ma navigation internet, 
-            mais plus motivée que jamais à enfin apprendre un métier technique qui me passione. Aujourd'hui je suis développeuse
-            web dans l'entreprise qui m'a accueillie en stage. J'ai encore beaucoup à apprendre, mais mon parcours prouve qu'avec
-            du travail et de la persévérance, tout est possible !
-        </p>
-        <p>Julie | <strong>Promotion Wild Web Lions - Belfort </strong> | 2018</p>
-        <a href="#" class="bouton_rouge">Voir tous les témoignages</a> 
+        <div id="entete">
+            <div class="titre">
+                <h3>Témoignages</h3>
+                <img src="images/ligneBlanche_titre.png" alt="ligne"/>
+            </div>
+            <div id="quote">      
+                <img src="images/quote.png" alt=" quote"/>
+            </div>
+        </div>
+        <div id="temoignTexte">
+            <p>J'ai intégré l'ACS pour une reconversion professionnelle, sans autre expérience que celle de ma navigation internet, 
+                mais plus motivée que jamais à enfin apprendre un métier technique qui me passione. Aujourd'hui je suis développeuse
+                web dans l'entreprise qui m'a accueillie en stage. J'ai encore beaucoup à apprendre, mais mon parcours prouve qu'avec
+                du travail et de la persévérance, tout est possible !
+            </p>
+            <div id="identite">
+                <p>Julie</p>
+                <p> <strong>Promotion Wild Web Lions - Belfort </strong></p> 
+                <p>2018</p>
+            </div>
+                <a href="#" class="bouton_rouge">Voir tous les témoignages</a> 
+            
+        </div>  
     </div>
-    <!-- ----------------------------- -->
+    <!-- -------------------bandeau contact--------------- -->
     <div id="contact">
         <div class="titre">
             <h3>CONTACT</h3>
             <img src="images/ligneBlanche_titre.png" alt="ligne"/>
         </div>
+                         <!-- FORMULAIRE -->
         <form method="post" action="contact.php">
-            <p class="formulaire">
-                <label for="nom">NOM*</label>:<input type="text" name="nom" id="nom" required/>
-                <label for="prenom">PRENOM*</label>:<input type="text" name="prenom" id="prenom" required/>
-                <label for="email">EMAIL*</label>:<input type="email" name="email" id="email" required/>
-                <label for="codepotal">CODE POSTAL*</label>:<input type="text" name="codepostal" id="codepostal" required/>
-                <label for="nom">VILLE*</label>:<input type="text" name="ville" id="ville" required/>
-                <p class="texteformulaire"> 
-                    Devenez un professionnel du web et rejoignez une communauté d'élèves motivés aux parcours différents.
-                    Les inscriptions sont ouvertes. <br/> <br/>
-                    Prochaines promotions courant 2018, <strong>inscrivez-vous dès maintenant!</strong>
-                </p>
-                <label for="messages">MESSAGE*</label>:<textarea name ="message" id="message" required></textarea>
-                <input type="submit" value="Envoyer"/>
-            </p>
+            <div id="formulaire">
+                <div id="debut">
+                    <div id="formGauche">
+                        <div id="nomcomplet"> 
+                            <div id="nom1">
+                                <!-- <label for="nom">nom *</label> -->
+                                <input type="text" name="nom" id="nom" placeholder="nom *" required/>
+                            </div>
+                            <div id="nom2">
+                                <label for="prenom">prénom *</label>
+                                <input type="text" name="prenom" id="prenom" required/>
+                            </div>   
+                            </div>
+                        <div id="mail">
+                            <label for="email">email *</label>
+                            <input type="email" name="email" id="email" required/>
+                        </div>
+                        <div id="codeville">
+                            <div id="code">
+                                <label for="codepotal">code postal *</label>
+                                <input type="text" name="codepostal" id="codepostal" required/>
+                            </div>   
+                            <div id ="nomville">
+                                <label for="nom">ville *</label>
+                                <input type="text" name="ville" id="ville" required/>
+                            </div> 
+                        </div>
+                    </div>
+                    <div id="texteformulaire"> 
+                        <p>Devenez un professionnel du web et rejoignez une communauté d'élèves motivés aux parcours différents.
+                        Les inscriptions sont ouvertes. <br/> <br/>
+                        Prochaines promotions courant 2018, <strong>inscrivez-vous dès maintenant!</strong></p>
+                    </div>
+                </div>   
+                <div id="message">
+                    <label for="messages">MESSAGE *</label>
+                    <textarea name ="message" id="message" required></textarea>
+                    <input type="submit" value="Envoyer"/>
+                </div>
+            </div>
         </form>
     </div>
-    <!-- ----------------------------- -->
+    <!-- --------------------bandeau logo--------------------------- -->
     <div id="logos">
         <img src="images/logo_onlineformapro.png" alt="logo onlineformapro"/>
         <img src="images/logo_aformac.png" alt="logo aformac"/>
         <img src="images/logo_acs.png" alt="logo access code school"/>
         <img src="images/logo_access_robotique.png" alt="logo access robotique"/>
     </div>
-    <!-- ----------------------------- -->
+    <!-- -------------------bandeau footer----------------------- -->
     <footer>
-        <a href="#">Onlineformapro</a>
-        <p>|</p>
-        <a href="#">Mentions légales</a>
-        <img src="images/icon_facebook.png" alt="icone facebook"/>
-        <img src="images/icon_twitter.png" alt="icone twitter"/>
-        <img src="images/icon_mail.png" alt="icone mail"/>
-        <img src="images/icon_website.png" alt="icone website"/>
+        <div id="miseEnForme">
+            <div id="liens">
+                <a href="#">Onlineformapro</a>
+                <a href="#">Mentions légales</a>
+            </div>
+            <div id="icones">
+                <img src="images/icon_facebook.png" alt="icone facebook"/>
+                <img src="images/icon_twitter.png" alt="icone twitter"/>
+                <img src="images/icon_mail.png" alt="icone mail"/>
+                <img src="images/icon_website.png" alt="icone website"/>
+            </div>
+        </div>
     </footer>
-    <!-- ----------------------------- -->
+    
 </body>
 </html>
