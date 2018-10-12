@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <title>site access code</title>
+    <title>site access code school</title>
 </head>
 
 <body>
@@ -13,20 +13,24 @@
     <header>
     <!-- ------------barre de navigation   -->
         <nav>
-            <img src="images/logo_ACS2.png" alt="logo ACS" class="logoACS"/>
+            <div id="logoACS">
+                <img src="images/logo_ACS2.png" alt="logo ACS" />
+            </div> 
             <ul>
-                <li><a href="#">ACCUEIL</a></li>
-                <li><a href="#">LA FORMATION</a></li>
-                <li><a href="#">ACTUALITE</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">INSCRIPTION</a></li>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">La formation</a></li>
+                <li><a href="#">Actualité</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="enCours" href="#">Inscription</a></li>
             </ul>
         </nav>
-    <!-- -------------texte du header--- -->    
-        <h1>Devenez développeur web en 8 mois</h1>
-        <h2>Une formation qualifiante accessible sans condition de diplôme.</h2>
-        <!-- lien dans un paragraphe pour le définir en bloc -->
-        <p><a href="#" class="bouton_rouge1">En savoir plus</a></p>
+    <!-- -------------titres du header--- --> 
+        <div id="titres">
+            <h1>Devenez développeur web en 8 mois</h1>
+            <p class="sousTitre">Une formation qualifiante accessible sans condition de diplôme.</p>
+            <!-- lien dans un paragraphe pour le définir en bloc -->
+            <p><a href="#" class="bouton_rouge1">En savoir plus</a></p>
+        </div>   
     </header>
     <!-- -------------------bandeau GEN----------------------------- -->
     <div id="GEN">
@@ -34,15 +38,15 @@
         <img src="images/ligneRouge_titre.png" alt="ligne" />
         <div id="gen2">
             <div id="texteGauche">
-                <p>La grande Ecole du Numérique est un réseau de plus de 400 formations aux <br/>
-                métiers du numérique. Elle favorise l'inclusion et répond aux besoins des <br/>
+                <p>La Grande Ecole du Numérique est un réseau de plus de 400 formations aux
+                métiers du numérique. Elle favorise l'inclusion et répond aux besoins des 
                 recruteurs en compétences numériques.</p>
-                <p>Les 14 écoles Acess Code School ont été labellisées en tant que "Fabrique de <br/>
+                <p>Les 14 écoles Acess Code School ont été labellisées en tant que "Fabrique de 
                 la Grande Ecole du Numérique".</p>
             </div>
             <img src="images/logo_GEDN.png" alt="logo GEDN"/>
             <div id="texteDroite">
-                <p>La grande Ecole du Numérique c'est <strong>répondre au besoin d'emploi dans le <br/>
+                <p>La grande Ecole du Numérique c'est <strong>répondre au besoin d'emploi dans le 
                 secteur du numérique.</strong></p>
                 <ul>
                     <li>Acessible sans condition de diplôme</li>
@@ -99,14 +103,14 @@
                 <img src="images/ligneBlanche_titre.png" alt="ligne"/>
             </div>
             <h4>8 mois de formation dont 2 en entreprise</h4>
-            <p>Notre formation est gratuite, diplômante, intensive et accessible sans prérequis de <br/>
-            diplôme. Elle permet un accès rapide aux métiers de Développeur d'applications <br/>
-            web & mobile. Après 2 mois d'apprentissage, le stagiaire se spécialise afin de <br/>
-            devenir Développeur Front-End ou Développeur Back-End en fonction de ses goûts <br/>
+            <p>Notre formation est gratuite, diplômante, intensive et accessible sans prérequis de 
+            diplôme. Elle permet un accès rapide aux métiers de Développeur d'applications 
+            web & mobile. Après 2 mois d'apprentissage, le stagiaire se spécialise afin de 
+            devenir Développeur Front-End ou Développeur Back-End en fonction de ses goûts
             et de ses compétences.</p>
             <h4>Accessible sans conditions de diplôme</h4>
-            <p>Motivation, esprit logique, autonomie, capacité d'analyse, rigueur, sens créatif,<br/>
-            capacité à s'autoformer et envie de travailler en équipe sont les seuls critères de <br/>
+            <p>Motivation, esprit logique, autonomie, capacité d'analyse, rigueur, sens créatif,
+            capacité à s'autoformer et envie de travailler en équipe sont les seuls critères de 
             sélection</p>
             <a href="#" class="bouton_rouge2">JE M'INSCRIS</a>   
         </div>
@@ -116,10 +120,12 @@
     </div>
     <!-- -----------------bandeau projet------------------------ -->
     <div id="projet">
-        <img src="images/projet_img.png" alt="photo étudiant"/>
+        <div id="etudiant">
+            <img src="images/projet_img.png" alt="photo étudiant"/>
+        </div>
         <div id="texteProjet">
             <div class="titre">
-                <h3>A CHACUN SON PROJET</h3>
+                <h3>à chacun son projet</h3>
                 <img src="images/ligneRouge_titre.png" alt="ligne"/>
             </div>
              <p>Chaque apprenant bénéficie:</p>
@@ -136,8 +142,8 @@
          <!-- ------------------bandeau titre pro------------------------- -->
     </div>
     <div id="titrePro">
-        <p>Nos formations Acess Code School permettent d'obtenir un <br/>
-        <strong>Titre professionnel de Niveau III</strong> de Développeur logiciel<br/>
+        <p>Nos formations Access Code School permettent d'obtenir un 
+        <span>Titre professionnel de Niveau III</span> de Développeur logiciel
         ou de Designers Web.</p>
     </div>
     <!-- ---------------------bandeau centres---------------------------- -->
@@ -151,7 +157,7 @@
             <img src="images/centre_dijon.png" alt="dijon"/>
             <img src="images/centre_vesoul.png" alt="vesoul"/>
             <img src="images/centre_chalon.png" alt="chalon"/>
-            <img src="images/centre_belfort.png" alt="belforf"/>
+            <img src="images/centre_belfort.png" alt="belfort"/>
             <img src="images/centre_lons.png" alt="lons"/>
             <img src="images/centre_nevers.png" alt="nevers"/>
             <img src="images/centre_dakar.png" alt="dakar"/>
@@ -176,11 +182,10 @@
             </p>
             <div id="identite">
                 <p>Julie</p>
-                <p> <strong>Promotion Wild Web Lions - Belfort </strong></p> 
+                <p> <strong>Promotion Wild Web Lions - Belfort</strong> </p> 
                 <p>2018</p>
             </div>
-                <a href="#" class="bouton_rouge">Voir tous les témoignages</a> 
-            
+            <a href="#" class="bouton_rouge">Voir tous les témoignages</a>   
         </div>  
     </div>
     <!-- -------------------bandeau contact--------------- -->
@@ -193,36 +198,36 @@
         <form method="post" action="contact.php">
             <div id="formulaire">
                 <div id="debut">
-                    <div id="formGauche">
+                    <div id="formGauche">    <!-- remplacement des labels par des placeholders-->
                         <div id="nomcomplet"> 
                             <div id="nom1">
                                 <!-- <label for="nom">nom *</label> -->
                                 <input type="text" name="nom" id="nom" placeholder="nom *" required/>
                             </div>
                             <div id="nom2">
-                                <label for="prenom">prénom *</label>
-                                <input type="text" name="prenom" id="prenom" required/>
+                                <!-- <label for="prenom">prénom *</label> -->
+                                <input type="text" name="prenom" id="prenom" placeholder="prénom *" required/>
                             </div>   
                             </div>
                         <div id="mail">
-                            <label for="email">email *</label>
-                            <input type="email" name="email" id="email" required/>
+                            <!-- <label for="email">email *</label> -->
+                            <input type="email" name="email" id="email" placeholder="email *" required/>
                         </div>
                         <div id="codeville">
                             <div id="code">
-                                <label for="codepotal">code postal *</label>
-                                <input type="text" name="codepostal" id="codepostal" required/>
+                                <!-- <label for="codepotal">code postal *</label> -->
+                                <input type="text" name="codepostal" id="codepostal" placeholder="code postal *" required/>
                             </div>   
                             <div id ="nomville">
-                                <label for="nom">ville *</label>
-                                <input type="text" name="ville" id="ville" required/>
+                                <!-- <label for="nom">ville *</label> -->
+                                <input type="text" name="ville" id="ville" placeholder="ville *" required/>
                             </div> 
                         </div>
                     </div>
                     <div id="texteformulaire"> 
                         <p>Devenez un professionnel du web et rejoignez une communauté d'élèves motivés aux parcours différents.
                         Les inscriptions sont ouvertes. <br/> <br/>
-                        Prochaines promotions courant 2018, <strong>inscrivez-vous dès maintenant!</strong></p>
+                        Prochaines promotions courant 2018, <span>inscrivez-vous dès maintenant !</span></p>
                     </div>
                 </div>   
                 <div id="message">
@@ -254,7 +259,6 @@
                 <img src="images/icon_website.png" alt="icone website"/>
             </div>
         </div>
-    </footer>
-    
+    </footer> 
 </body>
 </html>

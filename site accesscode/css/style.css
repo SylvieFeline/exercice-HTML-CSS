@@ -1,14 +1,24 @@
 /* définition des polices */
 @font-face{
-    font-family: "Open Sans";
+    font-family: "OpenSans";
     src:url("../Open_sans_font/OpenSans-Regular.ttf");
+}
+@font-face{
     font-family: "OpenSansLight";
     src:url("../Open_sans_font/OpenSans-Light.ttf");
 }
+@font-face{
+    font-family: "OpenSansBold";
+    src: url("../Open_sans_font/OpenSans-Bold.ttf");
+}
+/* retrait des valeurs par défaut */
+.{
+    margin: 0;
+    padding: 0;
+}
 
 body{
-     
-     font-family: "Open Sans";
+     font-family: "OpenSans";
 }
 /* -----------------------entête--------------------------- */
 header{
@@ -23,67 +33,80 @@ header{
     flex-direction: column;
 }
 /* ---------------barre de navigation en haut- */
+#logoACS{
+    margin-left: 360px;
+    margin-top: 20px;
+}
 nav{
     display:flex;
     justify-content:space-between ;
     /* fond noir en transparence */
     background-color: rgb(0,0,0,0.3);
     width: 1920px;
+    height: 90px;
     /* position en haut */
     position: absolute;
     top: 0;
-    padding: 20px 0;
 }
-.logoACS{
-    padding-left: 160px;
-}
+
 nav ul{
     display: flex;
-    padding-right: 160px;
+    margin-right: 360px;
+    margin-top: 0;
+    text-transform: uppercase;
+    height: 100%;
 }
-nav li, nav a, header a{
+
+nav li, header a{
     list-style: none;
     text-decoration: none;
     color: white;
-    margin: 5px;
+    padding: 32px 10px;
 }
 nav ul :hover{
     color: #d31f44;
 }
-/* --------------------texte du header */
+.enCours{
+    background-color: #d31e44;
+    padding: 36px;
+}
+
+/* --------------------titres du header */
+#titres{
+    margin: 0 360px;
+}
 h1{
-    margin-top: 330px;
-    font-size: 3em;
+    margin-top: 380px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 3.1em;
     font-family: "OpenSans";
 }
-h2{
+.sousTitre{
     background-color: rgb(150,150,150,0.3);
-    padding: 10px;
-    margin-left: 400px;
-    margin-right: 400px;
-   
-    color: gray;
-    font-size: 2em;
+    padding: 10px 0;
+    margin: 10px 50px;
+    font-size: 2.2em;
     font-family: "OpenSansLight";
 }
 /* ------------------bouton rouge du header */
 .bouton_rouge1{
-    background-image: url("../images/fondBoutonRougeDegrade.png");
-    background-repeat: no-repeat;
-    padding: 10px 20px;
-    margin-top: 40px;
+    background-image: linear-gradient(to left, #9d0021, #d31e44);
+    padding: 15px 50px;
+    position: relative;
+    top: 50px;
 }
 
 /* ------------bandeau GEN--------------------------- */
 #GEN{
-    height: 360px;
+    height: 460px;
     width: 1920px;
     margin-top: 896px;
     padding: 30px 0;
 }
 h3{
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -96,17 +119,19 @@ h3{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 30px 160px;
+    padding: 70px 0;
 }
 #texteGauche{
     text-align: right;
     padding-right: 20px;
-    width: 510px;
+    margin-left: 360px;
+    width: 500px;
 }
 #texteDroite{
     text-align: left;
     padding-left: 20px;
-    width: 510px;
+    margin-right: 360px;
+    width: 500px;
 }
 /* puces des listes en elipses rouges */
 #texteDroite li, #texteProjet li{
@@ -118,7 +143,7 @@ h3{
 #enseignement{
     background-image: url("../images/projet_collaboratif_bg.png");
     background-repeat: no-repeat;
-    height: 380px;
+    height: 405px;
     width: 1920px;
     color: white;
     text-align: center;
@@ -129,7 +154,7 @@ h3{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 60px 160px;
+    padding: 60px 360px;
 }
 #enseign p{
     text-align: center;
@@ -142,9 +167,8 @@ h3{
     display: flex;
     justify-content: center;
     width: 1920px;
-    height: 440px;
+    height: 560px;
     padding-top: 50px;
-
 }
 /* mise en forme pour tous les titres souligné */
 .titre, .titre h3{
@@ -153,6 +177,7 @@ h3{
 #texteMetier{
     text-align: left;
     padding-right: 40px;
+    padding-left: 360px;
 }
 #texteMetier h4{
     margin-bottom: 0;
@@ -160,9 +185,11 @@ h3{
 #texteMetier h4 + p{
     margin-top: 0;
 }
+/* bouton */
 #texteMetier a{
-    padding: 10px 30px;
-    margin-top: 40px;  
+    padding: 10px 50px;
+    position: relative;
+    top: 50px;
     text-decoration: none;
     color:white;
     border: 3px white solid;
@@ -172,78 +199,104 @@ h3{
     border: none ;
 }
 #video{
-    padding-top: 30px;
+    padding-top: 100px;
+    padding-right: 360px;
 }
 
 /* -------------------------bandeau projet------------------------ */
 #projet{
     display: flex;
     justify-content: center;
-    padding: 50px 160px;
-
+    padding: 0 360px;
+    padding-bottom: 50px;
+    width: 1200px;
+    height: 360px;
 }
-
+#etudiant{
+    margin-top: 70px;
+}
 #texteProjet{
     padding-left: 40px;
-
+    margin-top: 35px;
+    font-size: 0.85em;
+    line-height: 1.8em;
+}
+#texteProjet p{
+    padding: 10px 0;
+}
+#texteProjet ul{
+    padding-left: 0;
+    margin-left: 25px;
 }
 
 /* --------------------------bandeau titre pro---------------------- */
 #titrePro{
     background-image: url(../images/projet_bg.png);
     width: 1920px;
-    height: 250px;
+    height: 296px;
     color: white;
     text-align: center;
-    font-size: 2em;
-    padding-top: 50px;
+    font-size: 2.2em;
+}
+#titrePro p{
+    padding: 70px 460px;
+}
+#titrePro span{
+    font-family: "OpenSansBold";
 }
 
 /* ----------------------------bandeau centres------------------ */
 #centres{
-    width: 1920px; 
+    width: 1200px; 
+    margin: 50px 360px;
 }
 #centres h3, #centres .ligne{
-    padding: 10px 360px;
     margin-bottom: 0;
 }
 #photosCentres{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 10px 360px;
+    margin-top: 50px;
 }
 #photosCentres img{
-    padding-bottom: 25px;
+    margin-bottom: 25px;
+    background-color: #d31e44;
 }
 #photosCentres img:hover{
-    color: #d31e44;opacity:0.5;
+    opacity:0.2; 
+    filter:alpha(opacity=20);   
 }
 
 /* -----------------------------bandeau témoignages------------- */
 #temoignages{
     background-image: url(../images/temoignages.png);
     width: 1200px;
-    height: 600px;
+    height: 540px;
     color:white;
     padding: 30px 360px;
 }
 #entete{
     display: flex;
     justify-content: space-between;
+    margin-top: 0;
 }
-
+#quote{
+    margin-top: 30px;
+}
 #temoignTexte{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+    height: 400px;
 }
 #temoignTexte p{
-    font-family: "OpenSansLignt";
-    line-height: 30px;
+    font-family: "OpenSansLight";
+    line-height: 40px;
     padding-top: 30px;
+    margin-bottom: 0;
     font-size: 1.4em;
-    color: grey;
     text-align: justify;
 }
 #identite{
@@ -252,21 +305,22 @@ h3{
     justify-content: space-between;
 }
 #identite strong{
-    border-left: 1px white solid;
-    border-right: 1px white solid;
+    border-left: 2px white solid;
+    border-right: 2px white solid;
     padding: 0 15px;
     color: white;
 }
 /* bouton */
 #temoignages a{
     text-decoration: none;
-    color: grey;
+    color: white;
     border: 3px white solid;
-    padding: 15px 20px;  
+    padding: 10px 10px;  
     margin-top: 50px; 
-    width: 200px;
+    width: 225px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
+    font-family: "OpenSans";
 }
 #temoignages a:hover{
     background-image: linear-gradient(to left, #9d0021, #d31e44);
@@ -277,7 +331,7 @@ h3{
 #contact{
     background-image: linear-gradient(#9d0021, #d31e44);
     color: white;
-    height: 785px;
+    height: 700px;
     padding: 40px 360px;
     width: 1200px;
 }
@@ -289,6 +343,7 @@ h3{
 ::placeholder{
     text-transform: uppercase;
     color:white;
+    font-size: 1.2em;
 }
 /* mise en page des flex-box */
 #formulaire{
@@ -304,16 +359,18 @@ h3{
     display: flex;
     justify-content: space-between;
 }
-/* border: 2px blue solid; */
-/* border: 2px red solid; */
+
 #formGauche{
     width: 50%;
 }
 /* mise en place du paragraphe de texte */
 #texteformulaire{
     padding-left: 50px;
-    padding-top: 20px;
+    padding-top: 30px;
     width: 50%;
+}
+#texteformulaire span{
+    font-family: "OpenSansBold";
 }
 /* retrait des cases de saisies par défaut  */
 input, textarea{
@@ -325,12 +382,11 @@ input, textarea{
     border-bottom: 2px white solid;
     margin-bottom: 20px;
     padding-bottom: 5px;
+    font-size: 1.5em;
 }
-
 #nom1, #nom2, #code, #nomville {
     width: 250px;
 }
-
 /* definition de la zone de message */
 textarea{
     border: 2px white solid;
@@ -339,13 +395,17 @@ textarea{
     width: 100%;
     resize: none;
 }
+label{
+    font-size: 1.1em;
+    padding-top: 30px;
+}
 /* bouton d'envoi */
 input[type=submit]{
     background-color: white;
     color: #d31f44;
     margin-left: 500px;
     margin-top: 50px;
-    padding: 20px 50px;
+    padding: 10px 50px;
     text-align: center;
 }
 
@@ -366,7 +426,7 @@ input[type=submit]{
 /* ----------------bandeau footer--------------- */
 footer{
     background-color: #3e3e3e;
-    height: 55px;
+    height: 50px;
     padding: 70px 360px;
     width: 1200px;
 }
@@ -383,5 +443,8 @@ footer a:first-child{
     padding-right: 5px;
 }
 #icones img{
-    padding-left: 10px;
+    padding-left: 50px;
+}
+#icones img:hover{
+    opacity: 0.6;
 }
