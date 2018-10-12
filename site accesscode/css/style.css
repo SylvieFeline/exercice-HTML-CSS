@@ -193,6 +193,7 @@ h3{
     text-decoration: none;
     color:white;
     border: 3px white solid;
+    text-transform: uppercase;
 }
 #texteMetier a:hover{
     background-image: linear-gradient(to left, #9d0021, #d31e44);
