@@ -19,6 +19,8 @@
 /* police général */
 body{
      font-family: "OpenSans";
+     width: 1920px;
+     margin: auto;
 }
 /* -----------------------entête--------------------------- */
 header{
@@ -112,7 +114,15 @@ h3{
     text-transform: uppercase;
     font-size: 1.8em;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+/* ligne hr rouge stylisée */
+.rouge{
+    display: block;
+    width: 150px;
+    background-image: linear-gradient(to right, #d31e44,white);
+    height: 3px;
+    border: none;
 }
 #GEN{
     text-align: center;
@@ -153,7 +163,15 @@ h3{
     text-align: center;
     padding-top: 40px;
 }
+/* ligne hr blanche stylisée */
+.blanche{
+    display: block;
+    width: 150px;
+    background-image: linear-gradient(to right,white,rgba(255, 255, 255, 0));
+    height: 3px;
+    border: none;
 
+}
 #enseign{
     display:flex;
     flex-direction: row;
@@ -174,9 +192,13 @@ h3{
     height: 560px;
     padding-top: 50px;
 }
+#texteMetier hr{
+    margin-left: 0;
+}
 /* mise en forme pour tous les titres souligné */
 .titre, .titre h3{
     text-align: left;
+    padding-bottom: 10px;
 }
 #texteMetier{
     text-align: left;
@@ -227,6 +249,9 @@ h3{
     font-size: 0.85em;
     line-height: 1.8em;
 }
+#texteProjet hr{
+    margin-left: 0;
+}
 #texteProjet p{
     padding: 10px 0;
 }
@@ -256,8 +281,11 @@ h3{
     width: 1200px; 
     margin: 50px 360px;
 }
-#centres h3, #centres .ligne{
+#centres h3, #centres .rouge{
     margin-bottom: 0;
+}
+#centres hr{
+    margin-left: 0;
 }
 #photosCentres{
     display: flex;
@@ -312,6 +340,9 @@ h3{
     justify-content: space-between;
     margin-top: 0;
 }
+#entete hr{
+    margin-left: 0;
+}
 #quote{
     margin-top: 30px;
 }
@@ -365,6 +396,9 @@ h3{
     height: 700px;
     padding: 40px 360px;
     width: 1200px;
+}
+#contact hr{
+    margin-left: 0;
 }
   /* texte en majuscule */
 #contact h3{
