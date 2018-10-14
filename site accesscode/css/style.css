@@ -260,13 +260,38 @@ h3{
     flex-wrap: wrap;
     margin-top: 50px;
 }
-#photosCentres img{
-    margin-bottom: 25px;
+.photo{
+    position: relative;
     background-color: #d31e44;
+    margin-bottom: 25px;
+}
+#photosCentres img{ 
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    display: block;
+    height: auto;
+    width: 100%; 
+}
+.effet{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%,-50%);  
+}
+.nomVilleCentre{   
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6em;
+}
+.photo:hover .effet{
+    opacity: 1;
 }
 #photosCentres img:hover{
-    opacity:0.2; 
-    filter:alpha(opacity=20);   
+    opacity:0.3; 
 }
 
 /* -----------------------------bandeau témoignages------------- */
