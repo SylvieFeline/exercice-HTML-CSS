@@ -11,12 +11,12 @@
     font-family: "OpenSansBold";
     src: url("../Open_sans_font/OpenSans-Bold.ttf");
 }
-/* retrait des valeurs par défaut */
+/* retrait des valeurs d'espacement par défaut */
 .{
     margin: 0;
     padding: 0;
 }
-
+/* police général */
 body{
      font-family: "OpenSans";
 }
@@ -66,9 +66,13 @@ nav li, header a{
 nav ul :hover{
     color: #d31f44;
 }
-.enCours{
+.active{
     background-color: #d31e44;
     padding: 36px;
+}
+/* texte en noir si page active */
+.active:hover{
+    color:black;
 }
 
 /* --------------------titres du header */
@@ -80,8 +84,8 @@ h1{
     margin-bottom: 0;
     padding-bottom: 0;
     font-size: 3.1em;
-    font-family: "OpenSans";
 }
+/* fond en transparence et police légère */
 .sousTitre{
     background-color: rgb(150,150,150,0.3);
     padding: 10px 0;
@@ -217,6 +221,7 @@ h3{
     margin-top: 70px;
 }
 #texteProjet{
+    position: relative;
     padding-left: 40px;
     margin-top: 35px;
     font-size: 0.85em;
@@ -227,7 +232,7 @@ h3{
 }
 #texteProjet ul{
     padding-left: 0;
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 /* --------------------------bandeau titre pro---------------------- */
@@ -452,8 +457,7 @@ input[type=submit]{
 /* ----------------bandeau footer--------------- */
 footer{
     background-color: #3e3e3e;
-    height: 50px;
-    padding: 70px 360px;
+    padding: 60px 360px;
     width: 1200px;
 }
 #miseEnForme{
@@ -464,7 +468,8 @@ footer a{
     color:white;
     text-decoration: none;
 }
-footer a:first-child{
+/* séparation entre les 2 premiers liens */
+#liens a:first-child{
     border-right: 1px white solid;
     padding-right: 5px;
 }
